@@ -1,7 +1,20 @@
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+function techList(arr, name) {}
+let array = [
+  {
+    tech: HTML,
+    name: 'Juliana',
+  },
+  {
+    tech: CSS,
+    name: 'Juliana',
+  },
+  {
+    tech: JavaScript,
+    name: 'Juliana',
+  },
+];
+console.log(techList(array, 'Juliana'));
 
 // Desafio 11
 function generatePhoneNumber() {
