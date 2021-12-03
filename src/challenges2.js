@@ -14,7 +14,7 @@ let array = [
     name: 'Juliana',
   },
 ];
-console.log(techList(array, 'Juliana'));
+// console.log(techList(array, 'Juliana'));
 
 // Desafio 11
 function generatePhoneNumber() {

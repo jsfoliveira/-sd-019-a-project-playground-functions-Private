@@ -79,11 +79,26 @@ function fizzBuzz(arr) {
 // console.log(fizzBuzz(array));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+// Utilizando RegEx (regular expression) para buscar todas as ocorrências de cada caractere (https://regex101.com/). Não consegui executar com o '.replaceAll'.
+function encode(str) {
+  let newStr1 = str.replace(/a/g, '1');
+  let newStr2 = newStr1.replace(/e/g, '2');
+  let newStr3 = newStr2.replace(/i/g, '3');
+  let newStr4 = newStr3.replace(/o/g, '4');
+  let newStr5 = newStr4.replace(/u/g, '5');
+  return newStr5;
 }
-function decode() {
-  // seu código aqui
+
+// let frase = 'hi there';
+// console.log(encode(frase));
+
+function decode(modStr) {
+  let newStr1 = modStr.replace(/1/g, 'a');
+  let newStr2 = newStr1.replace(/2/g, 'e');
+  let newStr3 = newStr2.replace(/3/g, 'i');
+  let newStr4 = newStr3.replace(/4/g, 'o');
+  let newStr5 = newStr4.replace(/5/g, 'u');
+  return newStr5;
 }
 
 module.exports = {
