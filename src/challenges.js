@@ -69,6 +69,7 @@ function catAndMouse(pMouse, pCat1, pCat2) {
     return 'os gatos trombam e o rato foge';
   }
 }
+// Utilizei as informações no site https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
 
 // Desafio 8
 function fizzBuzz(arr) {
