@@ -1,4 +1,4 @@
-// Desafio 1
+// Desafio 1: Use o &&
 function compareTrue(num1, num2) {
   if (num1 === true && num2 === true) {
     return true;
@@ -7,38 +7,39 @@ function compareTrue(num1, num2) {
   }
 }
 
-// Desafio 2
+// Desafio 2: Crie uma função que calcule a área de um triângulo
 function calcArea(base, height) {
   let resultado = (base * height) / 2;
   return resultado;
 }
 
-// Desafio 3
+// Desafio 3: Crie uma função que divida a frase
 function splitSentence(str) {
   let arr = str.split(' ');
   return arr;
 }
 // let frase = 'go Trybe';
 // console.log(splitSentence(frase));
-//Eu pesquisei sobre split no https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Symbol/split
+// Eu pesquisei sobre split no https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Symbol/split
 
-// Desafio 4
+// Desafio 4: Crie uma função que use concatenação de strings
 function concatName(arr) {
   let ultimo = arr[arr.length - 1];
   let primeiro = arr[0];
   return ultimo + ', ' + primeiro;
+  // outra opção: return ultimo.concat(primeiro);
 }
 // array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 // console.log(concatName(array));
 
-// Desafio 5
+// Desafio 5: Crie uma função que calcule a quantidade de pontos no futebol
 function footballPoints(wins, ties) {
   let pontos = 3 * wins + ties;
   return pontos;
 }
 // console.log(footballPoints(14, 8));
 
-// Desafio 6
+// Desafio 6: Crie uma função que calcule a repetição do maior número
 function highestCount(arr) {
   let cont = 0;
   let maiorNumero = 0;
@@ -56,6 +57,18 @@ function highestCount(arr) {
 }
 // let array = [9, 1, 2, 3, 9, 5, 7];
 // console.log(highestCount(array));
+// OUTRA FORMA:
+// const vezesRepete = (array1) => {
+//   let contador = 0;
+//   let maiorNumero = Math.max(...array1);
+//     for(let i = 0; i < array1.length; i++){
+//       if(array1[i] === maiorNumero){
+//         contador += 1
+//       }
+//     }
+//   return contador;
+//   }
+//   console.log(vezesRepete([9, 1, 2, 3, 9, 9, 5, 7]));
 
 // Desafio 7
 function catAndMouse(pMouse, pCat1, pCat2) {
@@ -70,6 +83,7 @@ function catAndMouse(pMouse, pCat1, pCat2) {
   }
 }
 // Utilizei as informações no site https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+// Math.abs vai pegar o valor absoluto, não vai deixar valor negativo, vai transformar em positivo.
 
 // Desafio 8
 function fizzBuzz(arr) {
