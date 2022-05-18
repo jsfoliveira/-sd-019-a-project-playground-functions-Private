@@ -1,20 +1,19 @@
 // Desafio 10
-//Entendi o método assign neste site https://www.delftstack.com/pt/howto/javascript/array-to-objects-javascript/
+// Entendi o método assign neste site https://www.delftstack.com/pt/howto/javascript/array-to-objects-javascript/
 function techList(arr, name) {
-  let novoArray = []; //lista de objetos
+  let novoArray = []; // lista de objetos
   if (arr.length < 1) {
     return 'Vazio!';
-  } else {
-    for (let i = 0; i < arr.length; i += 1) {
-      //adicionando os objetos da lista novoArray
-      arr.sort();
-      let obj = {}; //criei o objeto vazio
-      obj.tech = arr[i]; //coloquei a propriedade tech
-      obj.name = name; //coloquei a propriedade name
-      novoArray.push(obj); //adicionei o objeto no novoArray
-    }
-    return novoArray; //retornei a lista
   }
+  for (let i = 0; i < arr.length; i += 1) {
+    // adicionando os objetos da lista novoArray
+    arr.sort();
+    let obj = {}; // criei o objeto vazio
+    obj.tech = arr[i]; // coloquei a propriedade tech
+    obj.name = name; // coloquei a propriedade name
+    novoArray.push(obj); // adicionei o objeto no novoArray
+  }
+  return novoArray; // retornei a lista
 }
 let array = ['React', 'Jest', 'HTML', 'CSS', 'JavaScript'];
 console.log(techList([], 'Lucas'));
@@ -31,7 +30,7 @@ function generatePhoneNumber(arr) {
     }
   }
   for (let i = 0; i < arr.length; i += 1) {
-    //let num = arr[i];
+    // let num = arr[i];
     let contador = 0;
     for (let a = 0; a < arr.length; a += 1) {
       if (arr[i] === arr[a]) {
@@ -42,22 +41,21 @@ function generatePhoneNumber(arr) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
   }
-  let numeroTelefone =
-    '(' +
-    arr[0] +
-    arr[1] +
-    ')' +
-    ' ' +
-    arr[2] +
-    arr[3] +
-    arr[4] +
-    arr[5] +
-    arr[6] +
-    '-' +
-    arr[7] +
-    arr[8] +
-    arr[9] +
-    arr[10];
+  let numeroTelefone = `(${
+    arr[0]
+  }${arr[1]
+  })`
+    + ` ${
+      arr[2]
+    }${arr[3]
+    }${arr[4]
+    }${arr[5]
+    }${arr[6]
+    }-${
+      arr[7]
+    }${arr[8]
+    }${arr[9]
+    }${arr[10]}`;
   return numeroTelefone;
 }
 
@@ -67,8 +65,8 @@ function triangleCheck(lineA, lineB, lineC) {
   for (let i = 0; i < triangulo.length; i += 1) {
     triangulo[i];
     if (
-      triangulo[i] < triangulo[i] + triangulo[i] &&
-      triangulo[i] > triangulo[i] - triangulo[i]
+      triangulo[i] < triangulo[i] + triangulo[i]
+      && triangulo[i] > triangulo[i] - triangulo[i]
     ) {
       return true;
     }
