@@ -1,21 +1,20 @@
 // Desafio 10
-// Entendi o método assign neste site https://www.delftstack.com/pt/howto/javascript/array-to-objects-javascript/
 function techList(arr, name) {
-  let novoArray = []; // lista de objetos
+  let novoArray = [];
   if (arr.length < 1) {
     return 'Vazio!';
   }
   for (let i = 0; i < arr.length; i += 1) {
     // adicionando os objetos da lista novoArray
     arr.sort();
-    let obj = {}; // criei o objeto vazio
-    obj.tech = arr[i]; // coloquei a propriedade tech
-    obj.name = name; // coloquei a propriedade name
-    novoArray.push(obj); // adicionei o objeto no novoArray
+    let obj = {};
+    obj.tech = arr[i];
+    obj.name = name;
+    novoArray.push(obj);
   }
   return novoArray; // retornei a lista
 }
-let array = ['React', 'Jest', 'HTML', 'CSS', 'JavaScript'];
+// let array = ['React', 'Jest', 'HTML', 'CSS', 'JavaScript'];
 console.log(techList([], 'Lucas'));
 
 // Desafio 11 // não consegui fazer o ultimo return
